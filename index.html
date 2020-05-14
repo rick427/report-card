@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Report Card</title>
+</head>
+<body>
+    <section class="section">
+        <div class="section__logobox">
+            <img src="/logo.png" alt="logo" class="section__image">
+        </div>
+
+        <div class="section__pin">
+            <p>report card</p>
+        </div>
+
+        <div class="section__info">
+            <form class="form">
+                <div class="form__fields">
+                    <label class="form__label" for="name">Name of the student:</label>
+                    <input class="form__input" type="text" name="name">
+                </div>
+
+                <div class="form__fields-wrapper">
+                    <div class="form__fields inline">
+                        <label class="form__label" for="year">Year and section:</label>
+                        <input class="form__input half" type="text" name="year">
+                    </div>
+                    <div class="form__fields inline">
+                        <label class="form__label" for="period">Grading period:</label>
+                        <input class="form__input half" type="text" name="period">
+                    </div>
+                </div>
+
+                <div class="form__fields-wrapper">
+                    <div class="form__fields inline">
+                        <label class="form__label" for="advisor">Class advisor:</label>
+                        <input class="form__input half" type="text" name="advisor">
+                    </div>
+                    <div class="form__fields inline">
+                        <label class="form__label" for="schoolYear">School year:</label>
+                        <input class="form__input half" type="text" name="schoolYear">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="section__tableWrapper">
+            <div class="section__table">
+                <table id="table">
+                    <tr>
+                      <th id="left">Student</th>
+                      <th>1</th>
+                      <th>2</th>
+                      <th>3</th>
+                      <th>4</th>
+                    </tr>
+                    <tr>
+                      <td id="left">Science</td>
+                      <td>&#128512;</td>
+                      <td>&#128512;</td>
+                      <td>&#128526;</td>
+                      <td>&#128520;</td>
+                    </tr>
+                    <tr>
+                      <td id="left">Algebra</td>
+                      <td>&#128518;</td>
+                      <td>20%</td>
+                      <td>55%</td>
+                      <td>70%</td>
+                    </tr>
+                    <tr>
+                      <td id="left">Language</td>
+                      <td>13%</td>
+                      <td>44%</td>
+                      <td>52%</td>
+                      <td>66%</td>
+                    </tr>
+                    <tr>
+                      <td id="left">English literature</td>
+                      <td>43%</td>
+                      <td>12%</td>
+                      <td>&#129313;</td>
+                      <td>90%</td>
+                    </tr>
+                    <tr>
+                      <td id="left">History</td>
+                      <td>4%</td>
+                      <td>32%</td>
+                      <td>10%</td>
+                      <td>&#129314;</td>
+                    </tr>
+                    <tr>
+                      <td id="left">Writing</td>
+                      <td>55%</td>
+                      <td>45%</td>
+                      <td>67%</td>
+                      <td>78%</td>
+                    </tr>
+                    <tr>
+                      <td id="left">Computer science</td>
+                      <td>44%</td>
+                      <td>10%</td>
+                      <td>6%</td>
+                      <td>80%</td>
+                    </tr>
+                    <tr>
+                      <td id="left">Physical education</td>
+                      <td>100%</td>
+                      <td>90%</td>
+                      <td>80%</td>
+                      <td>100%</td>
+                    </tr>
+                    <tr>
+                      <td id="left">Training learning education</td>
+                      <td>0%</td>
+                      <td>34%</td>
+                      <td>63%</td>
+                      <td>50%</td>
+                    </tr>
+                    <tr>
+                      <td id="left">Music</td>
+                      <td>&#129327;</td>
+                      <td>20%</td>
+                      <td>63%</td>
+                      <td>44%</td>
+                    </tr>
+                    <tr>
+                      <td id="left">Arts</td>
+                      <td>77%</td>
+                      <td>12%</td>
+                      <td>55%</td>
+                      <td>80%</td>
+                    </tr>
+                  </table>
+            </div>
+
+            <div class="section__table">
+                <table id="table">
+                    <tr>
+                      <th>Grading System</th>
+                      <th>Score</th>
+                    </tr>
+                    <tr>
+                      <td >A+</td>
+                      <td>90 - 85%</td>
+                    </tr>
+                    <tr>
+                      <td>A</td>
+                      <td>85 - 90%</td>
+                    </tr>
+                    <tr>
+                      <td>A-</td>
+                      <td>85 - 80%</td>
+                    </tr>
+                    <tr>
+                      <td>B+</td>
+                      <td>80 - 79%</td>
+                    </tr>
+                    <tr>
+                      <td>B</td>
+                      <td>79 - 75%</td>
+                    </tr>
+                    <tr>
+                      <td>B-</td>
+                      <td>75 - 73%</td>
+                    </tr>
+                    <tr>
+                      <td>C+</td>
+                      <td>73 - 60%</td>
+                    </tr>
+                    <tr>
+                      <td>C</td>
+                      <td>60 - 63%</td>
+                    </tr>
+                    <tr>
+                      <td>C-</td>
+                      <td>63 - 50%</td>
+                    </tr>
+                    <tr>
+                      <td>D</td>
+                      <td>50 - 49%</td>
+                    </tr>
+                    <tr>
+                      <td>F</td>
+                      <td>48%</td>
+                    </tr>
+                  </table>
+            </div>
+        </div>
+
+        <div class="section__tableWrapper mt-3">
+            <div class="section__table">
+                <table id="table">
+                    <tr>
+                      <th id="left">Attendance</th>
+                      <th>1</th>
+                      <th>2</th>
+                      <th>3</th>
+                      <th>4</th>
+                    </tr>
+                    <tr>
+                      <td id="left">Days present</td>
+                      <td>5</td>
+                      <td>2</td>
+                      <td>5</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td id="left">Days absent</td>
+                      <td>0</td>
+                      <td>3</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td id="left">Total days present</td>
+                      <td>5</td>
+                      <td>2</td>
+                      <td>5</td>
+                      <td>5</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="section__table comment">
+                <p class="comment__heading">Teachers comment</p>
+                <p class="comment__content">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Ipsam eaque obcaecati quasi voluptate consequatur adipisci 
+                    cupiditate fuga error fugiat dolorum.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum minima, 
+                    blanditiis asperiores voluptate eligendi aliquam voluptates magni! Corrupti, 
+                    cum velit!
+                </p>
+            </div>
+        </div>
+
+        <div class="section__tableWrapper mt-3">
+            <div class="section__table">
+                <table id="table">
+                    <tr>
+                      <th id="left">Grade</th>
+                      <th>1</th>
+                      <th>2</th>
+                      <th>3</th>
+                      <th>4</th>
+                    </tr>
+                    <tr>
+                      <td id="left">Average grade</td>
+                      <td>A+</td>
+                      <td>B-</td>
+                      <td>C+</td>
+                      <td>A+</td>
+                    </tr>
+                    <tr>
+                      <td id="left">Quarterly grade</td>
+                      <td>B+</td>
+                      <td>C-</td>
+                      <td>A+</td>
+                      <td>B+</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="section__table comment">
+                <p class="comment__heading">Parents signature</p>
+                <div class="signbox">
+                    <img class="sign" src="/sign.png" alt="signature">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

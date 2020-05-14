@@ -1,0 +1,264 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    box-sizing: border-box;
+    padding: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #dbb8b8; */
+}
+
+body::-webkit-scrollbar{
+    width: .8rem;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #dbb8b8;
+    border-radius: 20px;
+}
+
+.section{
+    width: 90%;
+    border: 10px solid #70201a;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.section__logobox{
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+}
+
+.section__image{
+    width: 100%;
+}
+
+.section__pin{
+    position: absolute;
+    top: 10%;
+    left: 86%;
+    background-color: #70201a;
+    padding: 1rem;
+    width: 20rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.section__info{
+    margin: 3.5rem;
+    overflow: hidden;
+}
+
+.form__fields{
+    padding: .5rem;
+}
+
+.form__fields-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.form__fields.inline{
+    width: 50%;
+}
+
+.form__label{
+    font-size: 1.2rem;
+    color: #70201a;
+    text-transform: capitalize;
+}
+
+.form__input{
+    border: none;
+    border-bottom: 1px dotted #70201a;
+    width: 85%;
+    outline: none;
+    margin-left: 1rem;
+}
+
+.form__input:focus{
+    border-bottom: 1px solid #70201a;
+}
+
+.form__input.half{
+    width: 70%;
+}
+
+.section__tableWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section__tableWrapper.mt-3{
+    margin: 3rem 0;
+}
+
+.section__table{
+    width: 45%;
+    animation: fadeIn 900ms ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: scale(0.2);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.section__table:nth-child(1){
+    animation-delay: calc(1 * 300ms);
+}
+.section__table:nth-child(2){
+    animation-delay: calc(2 * 300ms);
+}
+.section__table:nth-child(3){
+    animation-delay: calc(3 * 300ms);
+}
+.section__table:nth-child(4){
+    animation-delay: calc(4 * 300ms);
+}
+
+.section__table.comment{
+    background-color: #f5dcdc;
+    padding: 1rem;
+}
+
+#table{
+    width: 100%;
+}
+
+#table td, #table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#table tr:nth-child(odd){
+    background-color: #f5dcdc;
+}
+
+#table tr:hover{
+    background-color: #dbb8b8;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #70201a;
+    color: white;
+}
+
+#left{
+    text-align: left;
+}
+
+.bg{
+    background-color: #f5dcdc;
+}
+
+td{
+    text-align: center;
+}
+
+.comment__heading{
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.comment__content{
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 1rem;
+    column-count: 2;
+    column-gap: 2rem;
+    column-rule: 1px solid #dbb8b8;
+}
+
+.signbox{
+    width: 9rem;
+    margin: 0 auto;
+}
+
+.sign{
+    width: 100%;
+}
+
+@media screen and (max-width: 500px){
+    .section__logobox{
+        width: 15rem;
+    }
+
+    .section__pin{
+        display: none;
+    }
+
+    .section__info{
+        margin: 1rem;
+    }
+
+    .form__input{
+        margin: 0;
+        width: 100%;
+    }
+    
+    .form__fields-wrapper{
+        flex-direction: column;
+    }
+
+    .form__fields.inline{
+        width: 100%;
+    }
+
+    .form__input.half{
+        width: 100%;
+    }
+
+    .section__tableWrapper{
+        flex-direction: column;
+    }
+
+    .section__table{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .section__table.comment{
+        margin-top: 2rem;
+    }
+
+    .comment__heading{
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1028px){
+    .section__pin{
+        left: 70%;
+    }
+}
